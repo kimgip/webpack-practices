@@ -6,5 +6,12 @@ module.exports = {
     output: {
         path: path.resolve('public'),
         filename: 'assets/js/main.js'
-    }
+    },
+    devServer: {
+        host: '0.0.0.0',
+        port: 9090,
+        liveReload: true,
+        compress: true,
+        hot: false
+    } 
 }
